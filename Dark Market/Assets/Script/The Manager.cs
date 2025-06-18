@@ -1,8 +1,10 @@
 using UnityEngine;
+using static UnityEditor.Timeline.Actions.MenuPriority;
 
 public class TheManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject BagMenu;
+   
     void Start()
     {
         
@@ -11,6 +13,6 @@ public class TheManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        public AddItem()
     }
 }
