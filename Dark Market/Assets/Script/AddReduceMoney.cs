@@ -11,7 +11,7 @@ public class AddReduceMoney : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown ("Fire1")) {
+        if (Input.GetButtonDown ("Fire1")) {
             cam.GetComponent<PlayerMoney>().addMoney(4);
         }
         if (Input.GetButtonDown("Fire2"))
