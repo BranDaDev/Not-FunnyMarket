@@ -1,8 +1,19 @@
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class AddReduceMoney : MonoBehaviour
 {
     public GameObject cam;
+ 
+    public void OnClickAdd()
+    {
+        cam.GetComponent<PlayerMoney>().addMoney(4);
+    }
+
+    public void OnClickSubtract()
+    {
+        cam.GetComponent<PlayerMoney>().subtractMoney(30);
+    }
     void Start()
     {
         
@@ -11,12 +22,6 @@ public class AddReduceMoney : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown ("Fire1")) {
-            cam.GetComponent<PlayerMoney>().addMoney(4);
-        }
-        if (Input.GetButtonDown("Fire2"))
-        {
-            cam.GetComponent<PlayerMoney>().subtractMoney(31);
-        }
+   
     }
 }
